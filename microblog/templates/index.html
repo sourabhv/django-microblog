@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Index</title>
-</head>
-<body>
-    <h1>Hello World</h1>
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block content %}
+    <h2><a href="{% url 'blog:list' %}">Checkout the blog</a></h2>
+{% endblock content %}
